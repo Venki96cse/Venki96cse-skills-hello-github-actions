@@ -68,3 +68,6 @@ jobs:
           gh workflow enable "Step 1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Show event trigger
+        run: echo "Triggered by ${{ github.event_name }}"
