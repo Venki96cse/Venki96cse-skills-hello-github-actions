@@ -2,9 +2,10 @@ name: Step 0 # Start Exercise
 
 on:
   push:
-    branches:
-      - main
-
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize]
+      
 permissions:
   contents: write
   actions: write
